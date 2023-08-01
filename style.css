@@ -19,20 +19,55 @@ header, nav, main, aside, footer{
 
 header{
     flex: 1 1 100vw;
+    height: 100px;
 }
 
 nav{
     flex: 1 1 200px;
 }
 
-main{
-    flex: 20 1 500px;
+.branco{
+    width: 10vw;
 }
 
 aside{
-    flex: 1 1 200px;
+    flex: 1 2 100vw;
 }
+
+main{
+    flex: 20 1 500px;
+    height: calc(100vh);
+}
+
 
 footer{
     flex: 1 1 100vw;
+    height: 100px;
 }
+
+@media only screen and (max-width: 923px) {
+    main{
+        height: calc(100vh - 330px);
+    }
+
+    aside{
+        flex: 1 1 100vw;
+        height: 100px;
+    }
+
+    .branco{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 717px){
+
+    main{
+        height: calc(100vh - 426px);
+    }
+
+    
+}
+
+
+
